@@ -25,11 +25,10 @@ Markdown编辑器及其基础语法介绍
 ## 2. Markdown基本语法介绍
 ### 2.1 标题
 &emsp;&emsp;Markdown支持两种标题的语法，类`Setext`和类`Atx`形式。类`Setext`是利用底线的形式，并且这种形式只能支持两级标题。在标题底下加上至少两个`=`(在本编辑器是这样的)，用来表示最高阶标题；标题底下加上至少两个`-`，表示第二阶标题。而类`Atx`则是利用在标题前面加上`1~6`个`#`，分别对应一级标题、二级标题，......，六级标题，因此能够支持六级标题。效果如下：
-<center>![Setext](https://github.com/liloganle/An-Introduction-to-Markdown/blob/master/images/setext.jpg) </center>
-<center>类Setext的标题显示效果 </center>
+
+![类Setext的标题显示效果](https://github.com/liloganle/An-Introduction-to-Markdown/blob/master/images/setext.jpg)
 <br>
-<center>![Atx](https://github.com/liloganle/An-Introduction-to-Markdown/blob/master/images/atx.jpg) </center>
-<center>类Atx的标题显示效果 </center>
+![类Atx的标题显示效果](https://github.com/liloganle/An-Introduction-to-Markdown/blob/master/images/atx.jpg)
 
 ### 2.2 段落与换行
 &emsp;&emsp;段落之间必须空行，否则两个段落就会合并成为一个段落；同理对于两行文本也是如此，中间不空出一行就会显示成一行文本。如果要在段落内加入换行，则必须使用`<br>`。
