@@ -15,7 +15,7 @@ Markdown编辑器及其基础语法介绍
 - 可以自定义字体、行高以及字体大小
 - 含有多种代码高亮主题
 - 支持自动重载
-- 支持本土化
+- 支持本地化
 - 支持专注模式
 - 支持跨平台，涵盖
 	- Windows
@@ -25,10 +25,10 @@ Markdown编辑器及其基础语法介绍
 ## 2. Markdown基本语法介绍
 ### 2.1 标题
 &emsp;&emsp;Markdown支持两种标题的语法，类`Setext`和类`Atx`形式。类`Setext`是利用底线的形式，并且这种形式只能支持两级标题。在标题底下加上至少两个`=`(在本编辑器是这样的)，用来表示最高阶标题；标题底下加上至少两个`-`，表示第二阶标题。而类`Atx`则是利用在标题前面加上`1~6`个`#`，分别对应一级标题、二级标题，......，六级标题，因此能够支持六级标题。效果如下：
-<center>![Setext](https://github.com/liloganle/An-Introduction-to-Markdown/blob/master/images/setext.jpg) </center>
+![Setext](./images/setext.jpg) 
 <center>类Setext的标题显示效果 </center>
 <br>
-<center>![Atx](https://github.com/liloganle/An-Introduction-to-Markdown/blob/master/images/atx.jpg) </center>
+![Atx](./images/atx.jpg) 
 <center>类Atx的标题显示效果 </center>
 
 ### 2.2 段落与换行
@@ -37,7 +37,13 @@ Markdown编辑器及其基础语法介绍
 &emsp;&emsp;写文章时，我们常常希望`首行缩进`两个汉字字符，这时就需要`&emsp;`。一个`&emsp;`代表缩进一个汉字字符，因此首行缩进两个字符需要用`&emsp;&emsp;`(注意：不要漏掉分号`;`)。
 
 ### 2.3 引用
-&emsp;&emsp;写文章或者的文档的时候，有时需要引用别人的内容，这是就需要引用符号`>`。引用既可以“引用内容”，也可以“多行引用”和“嵌套引用”。引用中也支持多级引用、标题、列表等常规语法。常见的引用写法及其效果如下图。
+&emsp;&emsp;写文章或者的文档的时候，有时需要引用别人的内容，这是就需要引用符号`>`。引用既可以“引用内容”，也可以“多行引用”和“嵌套引用”。引用中也支持标题、列表等其他*Markdown*语法。那么如何在引用中换行呢？在你想要换行的地方至少要键入两个空格之后在按`Enter`或者在引用的内容中加入一个空行就能实现引用内容的换行。但是加入一个空行的效果并没有前一种方法好，两行之间的行距会变宽。为了美观，推荐第一种方法。常见的引用写法及其效果如下图。
+![多行引用](./images/多行引用.png)
+<center> 多行引用 </center>
+![嵌套引用](./images/嵌套引用.png)
+<center> 嵌套引用 </center>
+![其他引用](./images/其他引用.png)
+<center> 其他引用 </center>
 
 代码引用：
 ```C++
