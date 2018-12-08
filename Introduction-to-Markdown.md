@@ -50,7 +50,7 @@ Markdown编辑器及其基础语法介绍
 <center>![list](https://raw.githubusercontent.com/liloganle/An-Introduction-to-Markdown/master/images/list.png) </center>
 
 ### 2.5 强调
-&emsp;&emsp;有时候我们在文档中需要强调某一个概念或者某一个名称，这时候有什么办法呢？按照以往的经验，想强调某一事物，直接给它的字体加粗，或者变为斜体，又或者既加粗又变为斜体。可是在Markdown语法中该怎么来实现呢？这主要是靠符号`*`和`_`来实现。在所需要强调的文字_前后_各加上一个`*`或者`_`，就表示*斜体*；文字__前后__各加上两个`*`或者`_`就表示**加粗**；文字___前后___各加上三个`*`或者`_`就表示***加粗 + 斜体***。顺便提一下：删除线的用法与文字加粗类似，不同的是删除线使用的符号是`~`。注意前后符号要一致且必须成对使用！具体效果如下图：
+&emsp;&emsp;有时候我们在文档中需要强调某一个概念或者某一个名称，这时候有什么办法呢？按照以往的经验，想强调某一事物，直接给它的字体加粗，或者变为斜体，又或者既加粗又变为斜体。可是在Markdown语法中该怎么来实现呢？这主要是靠符号`*`和`_`来实现。在所需要强调的文字 _前后_ 各加上一个`*`或者`_`，就表示 *斜体*；文字 __前后__ 各加上两个`*`或者`_`就表示 **加粗**；文字 ___前后___ 各加上三个`*`或者`_`就表示 ***加粗 + 斜体***。顺便提一下：删除线的用法与文字加粗类似，不同的是删除线使用的符号是`~`。注意前后符号要一致且必须成对使用！具体效果如下图：
 
 <center>![emphasis](https://raw.githubusercontent.com/liloganle/An-Introduction-to-Markdown/master/images/emphasis.png)</center>
 
@@ -74,10 +74,20 @@ int main(void){
 <center>![line](https://raw.githubusercontent.com/liloganle/An-Introduction-to-Markdown/master/images/separation-line.png)</center>
 
 ### 2.8 超链接与图片
-&emsp;&emsp;超链接的用法可以分为行内式、参考式和自动连接。图片的用法也可以分为行内式和参考式，用法与超链接类似，只是前面多了一个感叹号`!`。
+&emsp;&emsp;超链接的用法可以分为行内式、参考式和自动连接。图片的用法也可以分为行内式和参考式，用法与超链接类似，只是前面多了一个感叹号`!`。两者的格式分别如下：   
+&emsp;&emsp;超链接格式：`[]()`，其中[]里面放的是链接文本；()里面放的是链接地址。具体效果如下：   
+
+<center>![hyperlink](./images/picture-and-hyperlink.png) </center>  
+
+&emsp;&emsp;图片格式：`![]()`，其中[]里面放的是图片文本，也可以理解为文字说明，但是可以忽略不写；()里面放的是图片地址，这里的地址既可以是网络上的图片链接，也可以是本地图片地址。具体效果可以参考超链接的行内式和参考式的效果。
+
+### 2.9 表格
+&emsp;&emsp;表格是我们清晰展示并说明数据所代表含义的一种简洁和高效的方式。
 
 
-数学公式：
+
+
+### 2.10 数学公式：
 <center>
 $ J_{\alpha}(x) = \sum_{m=0}^{\infty} \frac{(-1)^m}{m! \Gamma (m+ \alpha + 1)} (\frac{x}{2})^{2m + \alpha}$
 </center>
