@@ -4,7 +4,7 @@ Markdown编辑器及其基础语法介绍
 <center>作者：Logan </center>
 
 ## 1. Moeditor
-&emsp;&emsp;本文档是一款名为*Moeditor*的MarkDown语法编辑器编写的，该编辑器已经在Github开源了，它的开源地址在[这里](https://github.com/Moeditor/Moeditor)，它的主页以及下载地址在[这里](https://moeditor.js.org/)。它有如下特点：
+&emsp;&emsp;本文档是一款名为**Moeditor**的MarkDown语法编辑器编写的，该编辑器已经在Github开源了，它的开源地址在[这里](https://github.com/Moeditor/Moeditor)，它的主页以及下载地址在[这里](https://moeditor.js.org/)。它有如下特点：
 - 界面美观、简介
 - 支持导出、生成HTML、PDF文档
 - 支持Github扩展语法
@@ -82,12 +82,14 @@ int main(void){
 &emsp;&emsp;图片格式：`![]()`，其中[]里面放的是图片文本，也可以理解为文字说明，但是可以忽略不写；()里面放的是图片地址，这里的地址既可以是网络上的图片链接，也可以是本地图片地址。具体效果可以参考超链接的行内式和参考式的效果。
 
 ### 2.9 表格
-&emsp;&emsp;表格是我们清晰展示并说明数据所代表含义的一种简洁和高效的方式。
+&emsp;&emsp;表格是我们清晰展示并说明数据所代表含义的一种简洁和高效的方式。在Markdown语法中，分别使用`-`来区分表头和其他的行；使用`|`来区分不同的列。同时为了美观和便于阅读，可以使用空格或者制表符来对齐不同行之间的内容，且在最左边和最右边使用`|`来标记表格边框。为了显示的内容美观，Markdown语法使用`:`提供了三种对齐格式：  
+		1. 左对齐的方式为: `:---`
+		2. 居中对齐的方式为: `:---:`
+		3. 右对齐的方式为: `---:`
+具体效果如下图所示：
+<center>![Table](https://raw.githubusercontent.com/liloganle/An-Introduction-to-Markdown/master/images/table.png) </center>
+注：如果不使用对齐符号，在 **Moeditor** 中默认表格内容是居中对齐的；
 
 
-
-
-### 2.10 数学公式：
-<center>
-$ J_{\alpha}(x) = \sum_{m=0}^{\infty} \frac{(-1)^m}{m! \Gamma (m+ \alpha + 1)} (\frac{x}{2})^{2m + \alpha}$
-</center>
+### 2.10 数学公式
+$$ J_{\alpha}(x) = \sum_{m=0}^{\infty} \frac{(-1)^m}{m! \Gamma (m+ \alpha + 1)} (\frac{x}{2})^{2m + \alpha} $$
